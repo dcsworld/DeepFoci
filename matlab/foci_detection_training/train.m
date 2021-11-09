@@ -26,9 +26,11 @@ out_layers = length(mask_chanels);
 
 for fold = 1%:folds
     
-    tmp_folder = ['../../../resutls_' model_name '_' num2str(fold)];
-    mkdir(tmp_folder)
-    
+%     tmp_folder = ['../../../resutls_' model_name '_' num2str(fold)];
+%     mkdir(tmp_folder)
+    tmp_folder = '';
+
+
 
     [files_test,files_train_valid] = subfolder_based_split(files,fold,folds,42);
     files_test = files_test';
