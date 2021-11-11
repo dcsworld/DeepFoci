@@ -28,7 +28,7 @@ for fold = 1%:folds
     
 %     tmp_folder = ['../../../resutls_' model_name '_' num2str(fold)];
 %     mkdir(tmp_folder)
-    tmp_folder = '';
+    tmp_folder = '.';
 
 
 
